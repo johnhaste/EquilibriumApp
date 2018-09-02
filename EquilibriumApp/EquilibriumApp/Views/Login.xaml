@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EquilibriumApp.Views.Login">
   <ContentPage.Content>
-      <StackLayout Padding="20" Spacing="20" BackgroundColor="White" VerticalOptions="CenterAndExpand">
+        <StackLayout Padding="20" Spacing="20" BackgroundColor="White" VerticalOptions="CenterAndExpand">
             <Image Source="IconeOficial.png" HorizontalOptions="Center" VerticalOptions="Start"/>
             <Entry Placeholder="Usuário" />
             <Entry Placeholder="Senha" IsPassword="True" />
@@ -16,10 +16,25 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+                
                 <Switch IsToggled="false" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" />
                 <Label Text="Lembrar-me" Grid.Row="0" Grid.Column="1" VerticalOptions="Start" HorizontalOptions="Start"/>
                 <Button Text="Entrar" BackgroundColor= "Orange" TextColor="White" FontAttributes="Bold" CornerRadius="15" Grid.Row="0" Grid.Column="2" VerticalOptions="EndAndExpand"/>
+            
+            </Grid>
+            <Grid Padding="15" VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <Button Text="Esqueci a senha" BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="0" Grid.Column="0" />
+                <Button Text="Criar uma conta" BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="0" Grid.Column="1" />
+                
             </Grid>
         </StackLayout>
-  </ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>
