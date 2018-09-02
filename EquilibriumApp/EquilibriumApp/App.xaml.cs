@@ -14,7 +14,7 @@ namespace EquilibriumApp
 			InitializeComponent();
 
 
-			MainPage = new MainPage();
+            MainPage = new EquilibriumApp.Views.Login();
 		}
 
 		protected override void OnStart ()
