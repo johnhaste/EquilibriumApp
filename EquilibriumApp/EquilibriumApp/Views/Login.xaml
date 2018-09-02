@@ -6,7 +6,7 @@
       <StackLayout Padding="20" Spacing="20" BackgroundColor="White" VerticalOptions="CenterAndExpand">
             <Image Source="IconeOficial.png" HorizontalOptions="Center" VerticalOptions="Start"/>
             <Entry Placeholder="Usuário" />
-            <Entry Placeholder="Senha" />
+            <Entry Placeholder="Senha" IsPassword="True" />
             <Grid Padding="15">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
