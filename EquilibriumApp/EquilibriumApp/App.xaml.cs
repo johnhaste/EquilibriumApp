@@ -1,12 +1,10 @@
-﻿using System;
-using Xamarin.Forms;
-using EquilibriumApp.Views;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation (XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace EquilibriumApp
 {
-	public partial class App : Application
+    public partial class App : Application
 	{
 		
 		public App ()
@@ -14,7 +12,7 @@ namespace EquilibriumApp
 			InitializeComponent();
 
 
-            MainPage = new EquilibriumApp.Views.Login();
+            MainPage = new NavigationPage(new EquilibriumApp.Views.Login());
 		}
 
 		protected override void OnStart ()

@@ -16,5 +16,15 @@ namespace EquilibriumApp.Views
         {
             InitializeComponent();
         }
+
+        async void IrParaCadastroPage(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new Cadastro());
+        }
+
+        async void IrParaRecuperarSenhaPage(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new RecuperarSenha());
+        }
     }
 }
