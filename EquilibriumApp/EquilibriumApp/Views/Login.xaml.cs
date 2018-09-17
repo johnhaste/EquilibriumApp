@@ -26,5 +26,9 @@ namespace EquilibriumApp.Views
         {
             await Navigation.PushAsync(new RecuperarSenha());
         }
+        async void IrParaSelecaoDeInteresses(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new SelecaoDeInteresses());
+        }
     }
 }
