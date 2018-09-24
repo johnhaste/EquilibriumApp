@@ -21,5 +21,11 @@ namespace EquilibriumApp.Views
         {
             await DisplayAlert("Teste", "Teste de abertura de alert", "Yes", "No");
         }
-	}
+
+        public async void IrParaFeed(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new Feed());
+        }
+
+    }
 }
