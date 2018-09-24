@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EquilibriumApp.Views.SelecaoDeInteresses"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Start" Padding="10">
+                <Label Text="Quais áreas da sua vida você deseja melhorar?"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="Start" 
+                        FontSize="Large"/>
+                <StackLayout>
+                    <Label Text="Pessoal" HorizontalOptions="Start" FontSize="Medium"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <controls:CheckBox DefaultText="Corpo" Grid.Column="0" Grid.Row="0"/>
+
+                            <Frame HorizontalOptions="EndAndExpand" Grid.Column="2" Grid.Row="1">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Alert"/>
+                                </Frame.GestureRecognizers>
+                                <Image Source="body_sm" WidthRequest="20" HeightRequest="20" Aspect="AspectFill"/>
+                            </Frame>
+
+                            <controls:CheckBox DefaultText="Conhecimento" Grid.Column="0" Grid.Row="1"/>
+                            
+                            <Frame HorizontalOptions="EndAndExpand" Grid.Column="2" Grid.Row="1">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Alert"/>
+                                </Frame.GestureRecognizers>
+                                <Image Source="knowledge_sm" WidthRequest="20" HeightRequest="20" Aspect="AspectFill"/>
+                            </Frame>
+
+                            <controls:CheckBox DefaultText="Emocional" Grid.Column="0" Grid.Row="2"/>
+                            
+                            <Frame HorizontalOptions="EndAndExpand" Grid.Column="2" Grid.Row="2">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Alert"/>
+                                </Frame.GestureRecognizers>
+                                <Image Source="emotional_sm" WidthRequest="20" HeightRequest="20" Aspect="AspectFill"/>
+                            </Frame>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Profissional" HorizontalOptions="Start" FontSize="Medium"/>
+                    <controls:CheckBox DefaultText="Dinheiro"/>
+                    <controls:CheckBox DefaultText="Trabalho"/>
+                    <controls:CheckBox DefaultText="Voluntariado"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Relacionamentos" HorizontalOptions="Start" FontSize="Medium"/>
+                    <controls:CheckBox DefaultText="Família"/>
+                    <controls:CheckBox DefaultText="Amor"/>
+                    <controls:CheckBox DefaultText="Amigos "/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Qualidade de Vida" HorizontalOptions="Start" FontSize="Medium"/>
+                    <controls:CheckBox DefaultText="Diversão"/>
+                    <controls:CheckBox DefaultText="Espiritualidade "/>
+                    <controls:CheckBox DefaultText="Plenitude"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
