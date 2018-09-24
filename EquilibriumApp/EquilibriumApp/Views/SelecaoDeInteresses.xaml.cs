@@ -24,7 +24,7 @@ namespace EquilibriumApp.Views
 
         public async void IrParaFeed(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new Feed());
+            await Navigation.PushAsync(new Login());
         }
 
     }
