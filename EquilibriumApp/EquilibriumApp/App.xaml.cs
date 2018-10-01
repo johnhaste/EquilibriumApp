@@ -1,13 +1,19 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using EquilibriumApp.Services;
+using EquilibriumApp.ViewModels;
+using EquilibriumApp.Views;
+using Autofac;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace EquilibriumApp
 {
     public partial class App : Application
 	{
-		
-		public App ()
+        public string AuthToken { get; set; }
+        public IContainer Container { get; }
+
+        public App ()
 		{
 			InitializeComponent();
 
@@ -29,5 +35,14 @@ namespace EquilibriumApp
 		{
 			// Handle when your app resumes
 		}
-	}
+
+        IContainer BuildContainer(Module module)
+        {
+            var builder = new ContainerBuilder();
+            builder.RegisterType<LoginViewModel>().AsSelf();
+            builder.RegisterType<NavigationService>().AsSelf().SingleInstance();
+            builder.RegisterModule(module);
+            return builder.Build();
+        }
+    }
 }

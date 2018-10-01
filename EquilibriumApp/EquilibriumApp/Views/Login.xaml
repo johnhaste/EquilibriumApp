@@ -6,8 +6,8 @@
         <StackLayout Padding="15" Spacing="15" BackgroundColor="White" VerticalOptions="CenterAndExpand">
             <Image Source="IconeOficial.png" Scale="0.7" HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
             <Label Text="Equilibrium App" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" />
-            <Entry Placeholder="Usuário" />
-            <Entry Placeholder="Senha" IsPassword="True" />
+            <Entry Placeholder="Usuário" Text="{Binding Email}" Keyboard="Email"/>
+            <Entry Placeholder="Senha" Text="{Binding Password}" IsPassword="True" />
             <Grid Padding="15">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
@@ -20,7 +20,7 @@
                 
                 <Switch IsToggled="false" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" />
                 <Label Text="Lembrar-me" Grid.Row="0" Grid.Column="1" VerticalOptions="Start" HorizontalOptions="Start"/>
-                <Button Text="Entrar" Clicked="IrParaSelecaoDeInteresses" BackgroundColor= "Orange" TextColor="White" FontAttributes="Bold" CornerRadius="15" Grid.Row="0" Grid.Column="2" VerticalOptions="EndAndExpand"/>
+                <Button Text="Entrar" Clicked="{Binding LoginCmd}" BackgroundColor= "Orange" TextColor="White" FontAttributes="Bold" CornerRadius="15" Grid.Row="0" Grid.Column="2" VerticalOptions="EndAndExpand"/>
                 
             </Grid>
             <Grid Padding="15" VerticalOptions="StartAndExpand">

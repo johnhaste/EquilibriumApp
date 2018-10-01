@@ -5,13 +5,10 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquilibriumApp.Android", "EquilibriumApp\EquilibriumApp.Android\EquilibriumApp.Android.csproj", "{D010FCBA-068B-4B3D-B823-3A130CEC7231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquilibriumApp.iOS", "EquilibriumApp\EquilibriumApp.iOS\EquilibriumApp.iOS.csproj", "{0D5589F8-069B-4FAE-95DB-51957B3FE810}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EquilibriumApp", "EquilibriumApp\EquilibriumApp\EquilibriumApp.shproj", "{43B1F43F-7834-4D50-884E-92A6814B8567}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		EquilibriumApp\EquilibriumApp\EquilibriumApp.projitems*{0d5589f8-069b-4fae-95db-51957b3fe810}*SharedItemsImports = 4
 		EquilibriumApp\EquilibriumApp\EquilibriumApp.projitems*{43b1f43f-7834-4d50-884e-92a6814b8567}*SharedItemsImports = 13
 		EquilibriumApp\EquilibriumApp\EquilibriumApp.projitems*{d010fcba-068b-4b3d-b823-3a130cec7231}*SharedItemsImports = 4
 	EndGlobalSection
@@ -42,24 +39,6 @@ Global
 		{D010FCBA-068B-4B3D-B823-3A130CEC7231}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{D010FCBA-068B-4B3D-B823-3A130CEC7231}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{D010FCBA-068B-4B3D-B823-3A130CEC7231}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|iPhone.Build.0 = Debug|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|iPhone.Deploy.0 = Debug|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|Any CPU.Build.0 = Release|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|Any CPU.Deploy.0 = Release|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|iPhone.ActiveCfg = Release|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|iPhone.Build.0 = Release|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|iPhone.Deploy.0 = Release|iPhone
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{0D5589F8-069B-4FAE-95DB-51957B3FE810}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

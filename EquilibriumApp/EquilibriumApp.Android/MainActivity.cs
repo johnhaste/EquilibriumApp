@@ -1,11 +1,8 @@
-﻿using System;
-
+﻿
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using Firebase;
 
 namespace EquilibriumApp.Droid
 {
@@ -20,6 +17,7 @@ namespace EquilibriumApp.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            FirebaseApp.InitializeApp(Application.Context);
             LoadApplication(new App());
         }
     }

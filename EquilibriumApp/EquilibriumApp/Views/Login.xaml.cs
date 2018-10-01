@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Autofac;
+using EquilibriumApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,7 @@ namespace EquilibriumApp.Views
         public Login()
         {
             InitializeComponent();
+            this.BindingContext = (Application.Current as App).Container.Resolve<LoginViewModel>();
         }
 
         async void IrParaCadastroPage(object sender, EventArgs args)
@@ -26,9 +29,10 @@ namespace EquilibriumApp.Views
         {
             await Navigation.PushAsync(new RecuperarSenha());
         }
+        /*
         async void IrParaSelecaoDeInteresses(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new SelecaoDeInteresses());
-        }
+        }*/
     }
 }
